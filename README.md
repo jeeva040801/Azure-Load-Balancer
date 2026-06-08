@@ -1,10 +1,23 @@
-# Azure Load Balancer High Availability Lab
+# Azure Load Balancer High Availability
 
 ## Project Overview
 
 This project demonstrates how Azure Load Balancer distributes incoming traffic across multiple virtual machines to provide high availability and fault tolerance.
 
 A highly available web application environment was created using two Linux virtual machines hosting separate web pages. Azure Load Balancer was configured to route incoming traffic to healthy backend instances.
+## Architecture
+
+```text
+                Internet
+                    │
+                    ▼
+            Azure Load Balancer
+                    │
+        ┌───────────┴───────────┐
+        ▼                       ▼
+     WebVM1                  WebVM2
+  (Apache/Nginx)         (Apache/Nginx)
+```                                                                    
 
 ---
 
@@ -88,13 +101,15 @@ Backend Pool
 
 ## Screenshots
 
-* Azure Load Balancer Overview
-* Backend Pool Configuration
-* Health Probe Configuration
-* Load Balancing Rules
-* Web Server 1 Response
-* Web Server 2 Response
-* Successful Traffic Distribution Test
+* architecture.png
+* vm-list.png
+* web-server-1.png
+* web-server-2.png
+* health-probe.png
+* load-balancing-rule.png
+* health-status.png
+* server1-response.png
+* server2-response.png
 
 ---
 
