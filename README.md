@@ -5,6 +5,7 @@
 This project demonstrates how Azure Load Balancer distributes incoming traffic across multiple virtual machines to provide high availability and fault tolerance.
 
 A highly available web application environment was created using two Linux virtual machines hosting separate web pages. Azure Load Balancer was configured to route incoming traffic to healthy backend instances.
+
 ## Architecture
 
 ```text
@@ -17,7 +18,9 @@ A highly available web application environment was created using two Linux virtu
         ▼                       ▼
      WebVM1                  WebVM2
   (Apache/Nginx)         (Apache/Nginx)
-```                                                                    
+```
+
+                                                                     
 
 ---
 
